@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+group 'com.jayfella'
+version '1.0.0'
+
+repositories {
+    jcenter()
+}
+
+project.ext {
+    jme_ver = "3.3.2-stable"
+}
+
+dependencies {
+
+    implementation "org.jmonkeyengine:jme3-core:$jme_ver"
+
+    testImplementation "org.jmonkeyengine:jme3-desktop:$jme_ver"
+    testImplementation "org.jmonkeyengine:jme3-lwjgl:$jme_ver"
+
+    testImplementation "com.simsilica:lemur:1.14.0"
+    testImplementation "com.simsilica:lemur-proto:1.9.1"
+    testImplementation "org.codehaus.groovy:groovy-all:3.0.5"
+
+}
