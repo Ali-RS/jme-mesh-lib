@@ -34,7 +34,7 @@ public class JmeMesh extends Mesh {
 
         Class<?> componentType = inputValues[0].getClass();
 
-        if (componentType == float.class || componentType == Float.class) {
+        if (componentType == Float.class) {
 
             FloatBuffer fb = BufferUtils.createFloatBuffer(inputValues.length);
 
@@ -46,7 +46,7 @@ public class JmeMesh extends Mesh {
             setBuffer(type, c, fb);
         }
 
-        else if (componentType == int.class || componentType == Integer.class) {
+        else if (componentType == Integer.class) {
 
             IntBuffer ib = BufferUtils.createIntBuffer(inputValues.length);
 
