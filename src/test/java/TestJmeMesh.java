@@ -35,7 +35,7 @@ public class TestJmeMesh extends SimpleApplication {
                 new Vector3f(1, 1, 0),
         };
 
-        int[] indices = {
+        Integer[] indices = {
                 2,0,1,  1,3,2
         };
 
